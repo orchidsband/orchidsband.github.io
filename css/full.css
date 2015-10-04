@@ -21,3 +21,10 @@ p {
     background-size: cover;
     -o-background-size: cover;
 }
+@media (min-width: 768px) {
+
+	.orchidsKO {
+	padding:150px;"
+}
+
+	}
