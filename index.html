@@ -69,7 +69,7 @@
         <p class="text-center"><strong>ORCHIDS</strong>’ intriguing live performance includes L’Duke on the decks and Dessingue on vocals, keys and a Moog Etherwave Theremin, with plans to bring out more collaborating artists. Recently joined in the studio by Zampiello for co-writing and production, <strong>ORCHIDS</strong> has rounded out a diverse and emotional synthpop sound that evokes equal parts revelry and reflection. It’s shimmering pop with a dark heart.</p>
     </div> 
 
-    <div id="orchids_feed"></div>
+    <div id="recent"></div>
 
 <div class="container" style="padding-top:75px;">
     <div class="embed-responsive embed-responsive-16by9">
@@ -85,31 +85,40 @@
 </p>
     </div>
 
-<div class="container">
+<footer><div class="container">
     
     <p class="text-center">
         Copywright © 2015 <strong>ORCHIDS</strong> 
-    </p>
+    </p></div></footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
 
-    <script src="/css/pongstagr.am.js"></script>
+    <script src="css/pongstagr.am.js"></script>
 <script>
 $(document).ready(function () {
  
-  $('#orchids_feed').pongstgrm({
+  $('#recent').pongstgrm({
     accessId:     '1362966259',
     accessToken:  '1362966259.0a45637.7695511fd215424f86dff95e047b58f0'
-    show: 'feed' 
-  });
- 
+    show: 'recent', // 'recent', 'feed', 'liked', 'user'
+08
+count : 8, // 1(min) - 40(max), instagram limits the maximum number of photos to 40
+09
+pager : true // true or false (enables/disable load more button)
+10
 });
+11
+ 
+12
+});
+13
 </script>
+
 
 </body>
 
